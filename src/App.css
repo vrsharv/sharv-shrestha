@@ -1,0 +1,140 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+/* Layout */
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Header */
+header {
+  background-color: #282c34;
+  padding: 20px;
+  text-align: center;
+  color: white;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+/* Announcement */
+.announcement {
+  background-color: #ffcc00;
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Hero Section */
+.hero {
+  background-image: url('/path/to/your/hero-image.jpg'); /* Add your image path */
+  background-size: cover;
+  background-position: center;
+  padding: 50px;
+  text-align: center;
+  color: white;
+}
+
+.hero h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 18px;
+}
+
+/* Blog Section */
+.blog-section {
+  padding: 20px;
+  background-color: #fff;
+}
+
+.blog-section h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.blog-post {
+  margin-bottom: 15px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 15px;
+}
+
+.blog-post h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.blog-post p {
+  font-size: 16px;
+}
+
+/* Footer */
+footer {
+  background-color: #282c34;
+  padding: 20px;
+  text-align: center;
+  color: white;
+  margin-top: auto;
+}
+
+footer p {
+  margin: 0;
+}
+
+/* Form Section (for Contact Page) */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 80%;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+  font-weight: bold;
+}
+
+form input,
+form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+form button {
+  padding: 10px 15px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #0056b3;
+}

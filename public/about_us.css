@@ -1,0 +1,136 @@
+/* Base Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Modern font */
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f9fc; /* Light grey background */
+    color: #333; /* Dark text for better readability */
+}
+
+header {
+    background: #1a1d2e; /* Deep navy background */
+    color: #ffffff;
+    text-align: center;
+    padding: 30px 0; /* Increased padding */
+    font-size: 28px; /* Larger font size */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Soft shadow effect */
+}
+
+/* Container Styling */
+.container {
+    max-width: 1200px; /* Centering the content */
+    margin: 40px auto; /* Spacing around the container */
+    padding: 20px;
+    background: #ffffff; /* White background for content */
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+/* Card Styling */
+.card {
+    display: flex;
+    align-items: flex-start; /* Align items to the top */
+    border: 1px solid #e1e4e8; /* Light border for card */
+    border-radius: 10px; /* Rounded corners for cards */
+    margin: 20px 0;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition for hover effect */
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* Increased shadow on hover */
+}
+
+/* Card Content */
+.card-content {
+    flex: 2; /* Take more space */
+    padding-right: 20px; /* Space between content and image */
+}
+
+.card-content h2 {
+    color: #1a1d2e; /* Consistent dark color */
+    margin-bottom: 12px; /* Space below heading */
+    font-size: 24px; /* Larger font size */
+    border-bottom: 2px solid #1a1d2e; /* Underline effect */
+    padding-bottom: 8px; /* Space below underline */
+}
+
+.card-content p {
+    margin: 0;
+    font-size: 16px; /* Standard paragraph font size */
+    color: #555; /* Subtle dark grey for paragraph text */
+}
+
+/* Photo Styling */
+.director-photo, .founder-photo, .co-founder-photo {
+    flex: 1; /* Equal space for images */
+    text-align: center;
+    padding: 20px;
+}
+
+.director-photo img, .founder-photo img, .co-founder-photo img {
+    width: 160px; /* Fixed width */
+    height: 160px; /* Fixed height */
+    border-radius: 50%; /* Circular images */
+    object-fit: cover; /* Ensures the image covers the circle */
+    object-position: center; /* Centers the image */
+    border: 6px solid #1a1d2e; /* Dark border styling */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition for hover effect */
+}
+
+.director-photo img:hover, .founder-photo img:hover, .co-founder-photo img:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25); /* Shadow effect on hover */
+}
+
+/* Section Styles */
+.about-section, .vision-section {
+    margin: 20px 0;
+    padding: 20px;
+    background: #f1f3f5; /* Light grey background for these sections */
+    border-left: 6px solid #1a1d2e; /* Decorative left border */
+    border-radius: 8px; /* Rounded corners */
+}
+
+.about-section h2, .vision-section h2 {
+    color: #1a1d2e; /* Dark text color for section headings */
+    font-size: 22px; /* Slightly larger font for section titles */
+}
+
+.about-section p, .vision-section p {
+    margin: 0;
+    font-size: 16px; /* Standard paragraph font size */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .card {
+        flex-direction: column; /* Stack vertically on smaller screens */
+        align-items: center; /* Center-align on smaller screens */
+    }
+
+    .director-photo img, .founder-photo img, .co-founder-photo img {
+        width: 140px; /* Adjust image size on small screens */
+        height: 140px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        font-size: 24px; /* Smaller font size for mobile */
+    }
+
+    .container {
+        margin: 20px; /* Reduced margin for mobile */
+    }
+
+    .card-content h2 {
+        font-size: 20px; /* Smaller heading size */
+    }
+
+    .card-content p {
+        font-size: 14px; /* Smaller paragraph size */
+    }
+}
